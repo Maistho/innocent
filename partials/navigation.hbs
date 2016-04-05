@@ -1,3 +1,8 @@
-{{#foreach navigation}}
-<a class="{{slug}}{{#if current}} current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
-{{/foreach}}
+<nav id="main-nav">
+    {{^is "index"}}<span id="home-link"><a href="{{@blog.url}}"><i class="icon-arrow-left"></i> Home</a></span>{{/is}}
+    <span id="nav-link">
+        {{#foreach navigation}}
+            <a class="{{slug}}{{#if current}} current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+        {{/foreach}}
+    </span>
+</nav>

@@ -1,12 +1,8 @@
 {{!< default}}
 
 <header id="main-header"{{#if @blog.cover}} class="has-cover"{{/if}}>
-	<nav id="main-nav">
-		<span id="nav-link">
-			{{navigation}}
-		</span>
-	</nav>
-	<a class="site-title" class="js-ajax-link js-show-index" href="{{@blog.url}}">
+	{{navigation}}
+	<a class="site-title" href="{{@blog.url}}">
 		{{#if @blog.logo}}
 			<span class="site-logo"><img src="{{@blog.logo}}" alt="Logo" /></span>
 		{{/if}}
@@ -23,9 +19,9 @@
 <div id="post-index" class="container">
 
 	<main class="content" role="main">
-	
+
 		{{> "loop"}}
-	
+
 	</main>
 
 </div>
