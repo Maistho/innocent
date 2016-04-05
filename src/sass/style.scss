@@ -9,6 +9,11 @@
 $breakpoint-phone:		480px;
 $breakpoint-tablet:		720px;
 
+/* Colors */
+$primary: #01b3db;
+$secondary: #ffc315;
+$warning: #d9005a;
+
 /* ==========================================================================
    Basics
    ========================================================================== */
@@ -256,17 +261,17 @@ img {
 	text-align: center;
 	padding: 40px 0;
 	z-index: 30;
-	
+
 	-webkit-transition: all ease 0.5s;
 	transition: all ease 0.5s;
-	
+
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	
+
 	&.has-cover {
 		background-color: #292e33;
 	}
-	
+
 	@media only screen and (max-width: $breakpoint-tablet) {
 		padding-top: 80px;
 	}
@@ -321,9 +326,9 @@ img {
 	text-decoration: none;
 	font-size: 0.75em;
 	display: inline-block;
-	color: #8a9199;
+	color: #FFF;
 	margin: 5px;
-	border: 1px solid #c2c7cc;
+	border: 1px solid darken($primary, 10%);
 	height: 38px;
 	line-height: 38px;
 	padding: 0 15px;
@@ -331,20 +336,12 @@ img {
 	border-radius: 2px;
 	-webkit-transition: all ease 0.3s;
 	transition: all ease 0.3s;
+    background-color: $primary;
 }
 #main-nav a:hover,
 #main-nav a:focus {
-	color: #292e33;
-	border-color: #292e33;
-}
-.has-cover #main-nav a {
-	color: rgba(255,255,255,0.75);
-	border-color: rgba(255,255,255,0.5);
-}
-.has-cover #main-nav a:hover,
-.has-cover #main-nav a:focus {
-	color: rgba(255,255,255,1);
-	border-color: rgba(255,255,255,0.75);
+    background-color: darken($primary, 10%);
+	border-color: darken($primary, 20%);
 }
 .site-title {
 	display: block;
@@ -482,7 +479,7 @@ img {
 }
 #post-index {
 	position: relative;
-} 
+}
 #post-index .post:after {
 	content: '';
 	position: absolute;
@@ -564,7 +561,7 @@ img {
 		left: 0;
 		top: 0;
 	}
-	
+
 	.pagination-prev,
 	.pagination-next {
 		position: relative;
@@ -582,13 +579,13 @@ img {
 		border-radius: 2px;
 		-webkit-border-radius: 2px;
 		z-index: 100;
-		
+
 		&:hover,
 		&:focus {
 			color: #292e33;
 			border-color: #292e33;
 		}
-		
+
 		@media only screen and (max-width: $breakpoint-phone) {
 
 			> span {
@@ -602,7 +599,7 @@ img {
 	.pagination-next {
 		float: left;
 	}
-	
+
 	.pagination-info {
 		display: block;
 		font-size: 0.75em;
@@ -618,7 +615,7 @@ img {
 
 .extra-pagination {
 	display: none;
-	
+
 	&:after {
 		display: none;
 	}
