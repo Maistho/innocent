@@ -695,6 +695,9 @@ img {
 	border-radius: 10em;
 	-webkit-border-radius: 10em;
 }
+.floating-avatar {
+	width: 100px;
+}
 .post-author-avatar img {
 	width: 100%;
 	margin: auto;
@@ -771,4 +774,7 @@ img {
 	.post-author-avatar {
 		margin: -0.25em 0 0 0.5em;
 	}
+    .floating-avatar {
+        display: none;
+    }
 }

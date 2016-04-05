@@ -10,6 +10,11 @@
 	{{#if @blog.cover}}
 		<div class="site-cover" style="background-image: url({{@blog.cover}})"></div>
 	{{/if}}
+				{{#if image}}
+					<figure class="post-author-avatar floating-avatar">
+						<img src="{{image}}" alt="{{name}}" />
+					</figure>
+				{{/if}}
 </header>
 
 {{/author}}
