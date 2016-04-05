@@ -3,7 +3,6 @@
   "description": "Ghost Theme",
   "dependencies": {
     "fitvids": "~1.1.0",
-    "highlightjs": "~8.8.0",
     "jquery": "~2.1.4",
     "normalize.css": "~3.0.3",
     "nprogress": "~0.2.0"
